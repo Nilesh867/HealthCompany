@@ -1,0 +1,374 @@
+*{
+
+	margin:0;
+	padding: 0;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+:root{
+	--navbar-height:59px;
+}
+
+
+#navbar{
+	display:flex;
+	align-items: center;
+	position:sticky;
+	top:0px;
+
+	}
+
+#navbar::before{
+	content:""; 
+	background-color: black;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width:100%;
+	z-index:-1;
+	opacity:0.6;
+}
+
+#logo img{
+	height: 26px;
+	margin : 20px 20px;
+	z-index:-1;
+}
+
+ul{
+	display:flex;
+}
+ li{
+    color: white;
+ 	list-style:none;
+ 	font-size:1.2rem;
+ }
+ a{
+ 	color:white;
+    display:block;
+ 	padding:3px 22px;
+ 	border-radius:20px;
+ 	text-decoration: none;
+ 	opacity:2.0;
+ }
+
+ a:hover{
+ 	color:grey ;
+ 	background:black;
+ 	opacity:0.99;
+ }
+
+
+ #Home{
+
+ 	display:flex;
+ 	flex-direction:column;
+	padding:3px 200px;
+ 	height: 660px;
+ 	justify-content:center;
+ 	align-items:center;
+ }
+
+
+ #Home::before{
+ 	content:""; 
+	background:url(bg.jpg) no-repeat center center/cover ;
+	position:absolute;
+	top:0px;
+	left:0px;
+    height: 700px;
+	width:100%;
+	z-index:-1;
+	opacity:0.89;
+
+ }
+
+ #Home h1{
+ 	color:white;
+ 	text-align:center;
+ }
+
+  #Home p{
+ 	color:white;
+ 	text-align:center;
+ 	font-size:1.3rem;
+ }
+
+ #services{
+ 	margin:34px;
+ 	display: flex;
+
+}
+
+
+.box{
+   border: 2px solid green;
+   width:400px;
+   padding:34px;
+   margin:19px;
+   border-radius:28px;
+   background:#e9f1e9;
+   margin-bottom:36px;
+
+}
+
+#services .box img{
+
+	height: 200px;
+	margin:auto;
+	display:flex;
+	width: 80%;
+
+	}
+
+#services.box p{
+	font-family:;
+}	
+
+#clients-section{
+	position:relative;
+	
+}
+ 
+
+#clients img{
+	height:124px;
+
+}
+
+.pr{
+	text-align: center;
+	background-color:#efeff6;
+	font-size:60px;
+
+}
+
+
+#clients{
+	
+	text-align: center;
+	padding: 60px ;
+	font-size: 30px;
+	background-color:#efeff6;
+}
+.client-item{
+	padding:40px;
+}
+
+.about{
+   margin: 10px auto;
+   display: flex;
+
+
+} 
+
+.abou{
+     display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.info{
+	font-size: 30px;
+}
+
+
+#contact{
+ 	display:flex;
+ 	flex-direction:column;
+	padding:3px 200px;
+ 	height: 660px;
+ 	justify-content:center;
+ 	align-items:flex-end;
+
+}
+ #contact::before{
+    content:"";
+    position:absolute;
+   top:0px;
+	left:0px;
+    height: 700px;
+	width:100%;
+	z-index:-1;
+	opacity:0.89;
+    background:url(bg.jpg) no-repeat center center/cover;
+ }
+
+#contact-box {
+	display:flex;
+	justify-content:center;
+    align-items:center;
+    padding-bottom:34px; 
+}
+ #contact-box input,
+ #contact-box textarea{
+ 	width:100%;
+ 	padding:0.5rem;
+ 	border-radius:11px;
+ 	font-size:1rem;
+
+
+ }
+
+ #contact-box form{
+ 	width:40%;
+ }
+
+
+ #contact-box label{
+
+ 	font-size:1.3rem;
+ }
+
+ footer{
+ 	background:black;
+ 	color:white;
+ 	padding:45px 20px 40px 15px; 
+ 	text-align:center;
+    font-size:20px;
+    opacity: 0.8;
+
+ }
+
+
+.primary{
+
+	font-size:3.1rem;
+	padding :5px;
+   text-align:center;    
+    }
+
+ .secondary{
+ 	font-size:2.1rem;
+ 	padding:12px;
+ 	text-align:center;
+ }  
+
+ .btn{
+ 	padding:6px 40px;
+ 	border:2px solid white;
+ 	background-color:#4CAF50;
+ 	color:white;
+ 	margin:17px;
+ 	font-size:1.3rem;
+ 	border-radius:10px;
+ 	cursor:pointer;
+ } 
+
+ .h-primary{
+
+ 	text-align: center;
+ 	font-size:50px;
+ 	font-style:italic;
+ }
+
+
+ @media only screen and (max-width: 1200px) {
+  #navbar{
+  	flex-direction:column;
+  	width:100%;
+
+  }
+
+ #navbar::before{
+ 	padding:0px;
+ }
+
+#navbar ul li a{
+	font-size:50%;
+	padding: -1px 1px;
+
+}  
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color:#e9cdcd;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  
+
+ #Home{
+ 	height:378px;
+ 	padding:3px 52%;
+
+ } 
+
+ #Home::before{
+ 	height: 422px;
+ 	width:100%;
+
+ }
+
+ #Home p{
+ 	font-size:60%;
+ }
+
+ .primary{
+ 	font-size:74%;
+
+ }
+
+ .secondary{
+ 	font-size:80%;
+ }
+
+ .text{
+ 	font-size:60%;
+ }
+
+ .btn{
+ 	font-size:10px;
+ 	padding:4px 8px;
+ }
+
+.p{
+	font-size:11px;
+}
+.box{
+	width:70%;
+}
+
+.h-primary{
+	font-size:90%;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  
+#services{
+ 	flex-direction:column;
+
+}
+
+}
+
+
+
+@media only screen and (max-width: 1200px) 
+{#clients{
+	flex-wrap:wrap;
+
+  }
+
+#clients img{
+ 	width:108px;
+ 	padding: 6px;
+ 	height: auto;
+ 	
+ } 
+
+
+ #contact-box{
+   width:100%;
+ }
+
+}
